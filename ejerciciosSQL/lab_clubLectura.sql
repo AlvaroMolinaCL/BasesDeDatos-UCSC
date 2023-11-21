@@ -59,13 +59,13 @@ GROUP BY integrante.rut;
 SELECT *
 FROM integrante
 WHERE rut NOT IN (SELECT integrante
-                  FROM integrante_libro)
+                  FROM integrante_libro);
 
 -- De la misma manera, seleccione los datos de los libros en la base de datos que aún no han sido leídos
 SELECT *
 FROM libro
 WHERE codigo NOT IN (SELECT libro
-                     FROM integrante_libro)
+                     FROM integrante_libro);
 
 /*
 6) Seleccione todos los libros junto con el promedio de días que han tardado en ser leídos.
@@ -75,4 +75,4 @@ SELECT titulo, AVG(fecha_termino - fecha_inicio) AS promedio
 FROM libro, integrante_libro
 WHERE integrante_libro.libro = libro.codigo
 AND   fecha_termino IS NOT NULL
-GROUP BY libro.codigo 
+GROUP BY libro.codigo;
