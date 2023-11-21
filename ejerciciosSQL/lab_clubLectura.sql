@@ -49,7 +49,7 @@ término).
 SELECT nombre, apellido, COUNT(*) AS libros_en_lectura
 FROM integrante, integrante_libro
 WHERE integrante_libro.integrante = integrante.rut
-AND fecha_termino IS NULL
+AND   fecha_termino IS NULL
 GROUP BY integrante.rut;
 
 /*
@@ -74,5 +74,5 @@ WHERE codigo NOT IN (SELECT libro
 SELECT titulo, AVG(fecha_termino - fecha_inicio) AS promedio
 FROM libro, integrante_libro
 WHERE integrante_libro.libro = libro.codigo
-AND fecha_termino IS NOT NULL
+AND   fecha_termino IS NOT NULL
 GROUP BY libro.codigo 
