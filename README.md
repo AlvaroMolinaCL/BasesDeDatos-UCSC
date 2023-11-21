@@ -1,2 +1,3 @@
-# BasesDeDatos
-This repository (in spanish language) contains study material, codes, and exercises solved by me in the Databases course taught at UCSC in the 2023-2 semester.
+# Bases de Datos
+
+Este repositorio contiene material de estudio, códigos y ejercicios resueltos por mí en el curso de Bases de Datos (IN1075C) impartido en la UCSC (específicamente en el semestre 2023-2).
