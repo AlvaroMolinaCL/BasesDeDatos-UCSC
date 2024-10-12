@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar productora - Sistema de Eventos y Entradas</title>
+</head>
+
+<body>
+    <hr>
+    <b>
+        <h2>Sistema de Eventos y Entradas</h2>
+    </b>
+
+    <h3>Ingrese el RUT de la productora y escriba en el atributo a modificar: </h3>
+
+    <form id="mod_productora" action="..\php\mod_productora.php" method="post">
+        <label for="rutProductora">RUT de la productora:</label><br>
+        <input type="number" id="rutProductora" name="rutProductora" required><br><br>
+
+        <label for="nombreProductora">Nombre de la productora:</label><br>
+        <input type="text" id="nombreProductora" name="nombreProductora"><br><br>
+
+        <input type="button" value="Pagina anterior" onClick="history.go(-1);">
+        <input type="submit" name="submit" value="Modificar">
+
+</body>
+
+</html>

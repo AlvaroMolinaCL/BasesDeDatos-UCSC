@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar productora - Sistema de Eventos y Entradas</title>
+</head>
+
+<body>
+    <hr>
+    <b>
+        <h2>Sistema de Eventos y Entradas</h2>
+    </b>
+
+    <h3>Ingrese los siguientes datos de la productora: </h3>
+    <p><small>Todos los campos son obligatorios</small></p>
+
+    <form id="add_imprevisto" action="..\php\add_productora.php" method="post">
+        <label for="rutProductora">RUT de la productora:</label><br>
+        <input type="numbrt" id="rutProductora" name="rutProductora" required><br><br>
+
+        <label for="nombreProductora">Nombre de la productora:</label><br>
+        <input type="text" id="nombreProductora" name="nombreProductora" required><br><br>
+
+        <input type="button" value="Pagina anterior" onClick="history.go(-1);">
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>

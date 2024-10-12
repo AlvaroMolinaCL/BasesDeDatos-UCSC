@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANETARIO</title>
+</head>
+
+<body>
+    <hr>
+    <b>
+        <h3>Ingreso de cuerpos celestes.</h3>
+    </b>
+    <p>Ingrese los datos del nuevo cuerpo celeste</p>
+    <form id="ingreso" action="add.php" method="post">
+        <table>
+            <tr>
+                <td>Nombre: </td>
+                <td> <input type="text" name="Nombre"> </td>
+            </tr>
+            <tr>
+                <td>Masa: </td>
+                <td> <input type="text" name="Masa"> </td>
+            </tr>
+            <tr>
+                <td>Id: </td>
+                <td> <input type="text" name="Id"> </td>
+            </tr>
+            <tr>
+                <td>Diametro: </td>
+                <td> <input type="text" name="Diametro"> </td>
+            </tr>
+            <tr>
+                <td>Sistema planetario: </td>
+                <td> <input type="text" name="Sistema_planetario"> </td>
+            </tr>
+            <tr>
+                <td>Tipo de objeto: </td>
+                <td><select name="Tipo_de_objeto">
+                        <option value="planeta enano"> planeta enano </option>
+                        <option value="gigante gaseoso"> gigante gaseoso </option>
+                        <option value="planeta rocoso"> planeta rocoso </option>
+                        <option value="estrella"> estrella </option>
+                        <option value="otros"> otros </option>
+                    </select></td>
+            </tr>
+
+            <td><input type="submit" value="Agregar"></td>
+        </table>
+    </form>
+    <hr>
+</body>
+
+</html>

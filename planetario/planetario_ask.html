@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANETARIO</title>
+</head>
+
+<body>
+    <hr>
+    <b>
+        <h3>Busqueda de objetos</h3>
+    </b>
+    <p>Ingrese el nombre del objeto que desea buscar</p>
+    <form id="individual" action="ask.php" method="post">
+        Nombre: <input type="text" name="Nombre">
+        <input type="submit" value="Buscar">
+    </form>
+
+    <br>
+    <h3>Busque diferentes tipos de objetos.</h3></b>
+    <p>
+        Navege a traves de los diferentes tipos de objetos disponibles en el catalogo estelar<br>
+        Solo tiene que seleccionar el tipo de objeto que requiere conocer para desplegar la <br>
+        lista completa.
+    </p>
+    <p>
+    <form id="varios" action="ask.php" method="post">
+        Tipo de objeto:
+        <select name="Tipo_de_objeto">
+            <option value="planeta enano"> planeta enano </option>
+            <option value="gigante gaseoso"> gigante gaseoso </option>
+            <option value="planeta rocoso"> planeta rocoso </option>
+            <option value="estrella"> estrella </option>
+            <option value="otros"> otros </option>
+        </select>
+        <input type="submit" value="Seleccionar">
+    </form>
+    </p>
+    <hr>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar lugar - Sistema de Eventos y Entradas</title>
+</head>
+
+<body>
+    <hr>
+    <b>
+        <h2>Sistema de Eventos y Entradas</h2>
+    </b>
+
+    <h3>Ingrese los siguientes datos del lugar: </h3>
+    <p><small>Todos los campos son obligatorios</small></p>
+
+    <form id="add_lugar" action="..\php\add_lugar.php" method="post">
+
+        <label for="nombreLugar">Nombre del lugar:</label><br>
+        <input type="text" id="nombreLugar" name="nombreLugar" required><br><br>
+
+        <label for="direccionLugar">Direccion del lugar:</label><br>
+        <input type="text" id="direccionLugar" name="direccionLugar" required><br><br>
+
+        <label for="coordenadasLatitud">Coordenadas geograficas de latitud del lugar:</label><br>
+        <input type="number" id="coordenadasLatitud" name="coordenadasLatitud" required><br><br>
+
+        <label for="coordenadasLongitud">Coordenadas geograficas de longitud del lugar:</label><br>
+        <input type="number" id="coordenadasLongitud" name="coordenadasLongitud" required><br><br>
+
+        <label for="ciudadLugar">Ciudad del lugar:</label><br>
+        <input type="text" id="ciudadLugar" name="ciudadLugar" required><br><br>
+
+        <input type="button" value="Pagina anterior" onClick="history.go(-1);">
+        <input type="submit" value="Enviar">
+
+</body>
+
+</html>

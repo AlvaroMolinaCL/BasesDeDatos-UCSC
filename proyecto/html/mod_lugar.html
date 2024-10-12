@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar lugar - Sistema de Eventos y Entradas</title>
+</head>
+
+<body>
+    <hr>
+    <b>
+        <h2>Sistema de Eventos y Entradas</h2>
+    </b>
+
+    <h3>Ingrese el codigo del lugar y escriba en el atributo a modificar: </h3>
+
+    <form id="mod_lugar" action="..\php\mod_lugar.php" method="post">
+        <label for="codigoLugar">Codigo del lugar:</label><br>
+        <input type="number" id="codigoLugar" name="codigoLugar" required><br><br>
+
+        <label for="nombreLugar">Nombre del lugar:</label><br>
+        <input type="text" id="nombreLugar" name="nombreLugar"><br><br>
+
+        <label for="direccionLugar">Direccion del lugar:</label><br>
+        <input type="text" id="direccionLugar" name="direccionLugar"><br><br>
+
+        <label for="coordenadasLatitud">Coordenadas geograficas de latitud del lugar:</label><br>
+        <input type="number" id="coordenadasLatitud" name="coordenadasLatitud"><br><br>
+
+        <label for="coordenadasLongitud">Coordenadas geograficas de longitud del lugar:</label><br>
+        <input type="number" id="coordenadasLongitud" name="coordenadasLongitud"><br><br>
+
+        <label for="ciudadLugar">Ciudad del lugar:</label><br>
+        <input type="text" id="ciudadLugar" name="ciudadLugar"><br><br>
+
+        <input type="button" value="Pagina anterior" onClick="history.go(-1);">
+        <input type="submit" name="submit" value="Modificar">
+
+</body>
+
+</html>

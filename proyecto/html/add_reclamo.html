@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar reclamo - Sistema de Eventos y Entradas</title>
+</head>
+
+<body>
+    <hr>
+    <b>
+        <h2>Sistema de Eventos y Entradas</h2>
+    </b>
+
+    <h3>Ingrese los siguientes datos para su reclamo: </h3>
+    <p><small>Todos los campos son obligatorios</small></p>
+
+    <form id="add_reclamo" action="..\php\add_reclamo.php" method="post">
+
+        <label for="eventoReclamo">ID del evento vinculado al reclamo:</label><br>
+        <input type="number" id="eventoReclamo" name="eventoReclamo" required><br><br>
+
+        <label for="rutCliente">RUT del cliente:</label><br>
+        <input type="number" id="rutCliente" name="rutCliente" required><br><br>
+
+        <label for="descripcionReclamo">Descripcion del reclamo:</label><br>
+        <input type="text" id="descripcionReclamo" name="descripcionReclamo" required><br><br>
+
+        <label for="categoriaReclamo">Seleccione la categoria de su reclamo:</label>
+        <select id="categoriaReclamo" name="categoriaReclamo" required>
+            <option value="0">Seleccionar</option>
+            <option value="reclamo">Reclamo</option>
+            <option value="consulta">Consulta</option>
+            <option value="sugerencia">Sugerencia</option>
+            <option value="felicitación">Felicitacion</option>
+        </select><br><br>
+
+        <input type="button" value="Pagina anterior" onClick="history.go(-1);">
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>

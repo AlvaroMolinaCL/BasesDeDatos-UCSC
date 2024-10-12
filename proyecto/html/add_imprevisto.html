@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar imprevisto - Sistema de Eventos y Entradas</title>
+</head>
+
+<body>
+    <hr>
+    <b>
+        <h2>Sistema de Eventos y Entradas</h2>
+    </b>
+
+    <h3>Ingrese los siguientes datos del imprevisto: </h3>
+    <p><small>Todos los campos son obligatorios</small></p>
+
+    <form id="add_imprevisto" action="..\php\add_imprevisto.php" method="post">
+
+        <label for="eventoImprevisto">ID del evento donde ocurrio el imprevisto:</label><br>
+        <input type="number" id="eventoImprevisto" name="eventoImprevisto" required><br><br>
+
+        <label for="descripcionImprevisto">Descripcion de lo ocurrido:</label><br>
+        <input type="text" id="descripcionImprevisto" name="descripcionImprevisto" required><br><br>
+
+        <label for="categoriaImprevisto">Seleccione a que categoria de imprevisto corresponde:</label>
+        <select id="categoriaImprevisto" name="categoriaImprevisto" required>
+            <option value="0">Seleccionar</option>
+            <option value="cancelación">Cancelacion</option>
+            <option value="cambio de fecha">Cambio de fecha</option>
+        </select><br><br>
+
+        <input type="button" value="Pagina anterior" onClick="history.go(-1);">
+        <input type="submit" value="Enviar">
+
+</body>
+
+</html>

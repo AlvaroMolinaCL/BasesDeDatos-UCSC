@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar cliente - Sistema de Eventos y Entradas</title>
+</head>
+
+<body>
+    <hr>
+    <b>
+        <h2>Sistema de Eventos y Entradas</h2>
+    </b>
+
+    <h3>Ingrese los siguientes datos del nuevo cliente: </h3>
+    <p><small>Todos los campos son obligatorios</small></p>
+
+    <form id="add_cliente" action="..\php\add_cliente.php" method="post">
+        <label for="rutCliente">RUT del cliente:</label><br>
+        <input type="number" id="rutCliente" name="rutCliente" required><br><br>
+
+        <label for="nombreCliente">Nombre:</label><br>
+        <input type="text" id="nombreCliente" name="nombreCliente" required><br><br>
+
+        <label for="edadCliente">Edad:</label><br>
+        <input type="number" id="edadCliente" name="edadCliente" required><br><br>
+
+        <label for="correoCliente">Correo electronico:</label><br>
+        <input type="text" id="correoCliente" name="correoCliente" required><br><br>
+
+        <input type="button" value="Pagina anterior" onClick="history.go(-1);">
+        <input type="submit" value="Enviar">
+
+</body>
+
+</html>

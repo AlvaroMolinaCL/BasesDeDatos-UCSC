@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar entrada presencial - Sistema de Eventos y Entradas</title>
+</head>
+
+<body>
+    <hr>
+    <b>
+        <h2>Sistema de Eventos y Entradas</h2>
+    </b>
+
+    <h3>Ingrese el numero de la entrada presencial y escriba en el atributo a modificar: </h3>
+
+    <form id="mod_entradaPresencial" action="..\php\mod_entradaPresencial.php" method="post">
+
+        <label for="numEntrada">Numero de entrada:</label><br>
+        <input type="number" id="numEntrada" name="numEntrada" required><br><br>
+
+        <label for="fechaEntrada">Fecha:</label><br>
+        <input type="date" id="fechaEntrada" name="fechaEntrada"><br><br>
+
+        <label for="horaEntrada">Hora:</label><br>
+        <input type="time" id="horaEntrada" name="horaEntrada"><br><br>
+
+        <label for="valorEntrada">Valor de la entrada:</label><br>
+        <input type="number" id="valorEntrada" name="valorEntrada"><br><br>
+
+        <label for="CategoriaPublico">Categoria (general, estudiante, adulto mayor):</label><br>
+        <input type="text" id="CategoriaPublico" name="CategoriaPublico"><br><br>
+
+        <label for="Descuento">Descuento (ingresar 0 para eliminar descuento):</label><br>
+        <input type="number" id="Descuento" name="Descuento"><br><br>
+
+        <label for="rutCliente">RUT del cliente (ingresar 0 para devolver entrada):</label><br>
+        <input type="number" id="rutCliente" name="rutCliente"><br><br>
+
+        <label for="numAsiento">Numero de asiento:</label><br>
+        <input type="number" id="numAsiento" name="numAsiento"><br><br>
+
+        <input type="button" value="Pagina anterior" onClick="history.go(-1);">
+        <input type="submit" name="submit" value="Modificar">
+
+</body>
+
+</html>

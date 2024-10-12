@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar entrada presencial - Sistema de Eventos y Entradas</title>
+</head>
+
+<body>
+    <hr>
+    <b>
+        <h2>Sistema de Eventos y Entradas</h2>
+    </b>
+    <b>
+        <h3>Eliminar entrada presencial de la base de datos</h3>
+    </b>
+    <form id="del_entradaPresencial" action="..\php\del_entradaPresencial.php" method="post">
+
+        <p>Introduzca el numero de entrada</p>
+
+        Numero de entrada: <input type="number" name="numEntradaPresencial" required><br><br>
+
+        <input type="button" value="Pagina anterior" onClick="history.go(-1);">
+        <input type="submit" value="Eliminar">
+    </form>
+    <hr>
+</body>
+
+</html>

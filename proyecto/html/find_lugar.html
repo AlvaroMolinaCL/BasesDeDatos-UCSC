@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar lugar - Sistema de Eventos y Entradas</title>
+</head>
+
+<body>
+    <hr>
+    <b>
+        <h2>Sistema de Eventos y Entradas</h2>
+    </b>
+    <b>
+        <h3>Buscar lugar en la base de datos</h3>
+    </b>
+    <form id="find_lugar" action="..\php\find_lugar.php" method="post">
+
+        <p>Introduzca el codigo del lugar</p>
+
+        Codigo del lugar: <input type="number" name="codigoLugar" required><br><br>
+
+        <input type="button" value="Pagina anterior" onClick="history.go(-1);">
+        <input type="submit" value="Buscar">
+    </form>
+    <hr>
+</body>
+
+</html>

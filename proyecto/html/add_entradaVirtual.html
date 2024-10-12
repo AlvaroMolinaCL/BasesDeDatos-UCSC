@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar entrada virtual - Sistema de Eventos y Entradas</title>
+</head>
+
+<body>
+    <hr>
+    <b>
+        <h2>Sistema de Eventos y Entradas</h2>
+    </b>
+
+    <h3>Ingrese los siguientes datos para agregar una entrada virtual</h3>
+    <p><small>Los campos marcados con (*) son obligatorios</small></p>
+
+    <form id="add_entradaVirtual" action="..\php\add_entradaVirtual.php" method="post">
+        <label for="fechaEntrada">Fecha (*):</label><br>
+        <input type="date" id="fechaEntrada" name="fechaEntrada" required><br><br>
+
+        <label for="Hora">Hora (*):</label><br>
+        <input type="time" id="Hora" name="Hora" min="00:00" max="23:59" required><br><br>
+
+        <label for="valorEntrada">Valor de entrada:</label><br>
+        <input type="number" id="valorEntrada" name="valorEntrada" required><br><br>
+
+        <label for="categoriaPublico">Seleccione a que publico pertenece (*):</label>
+        <select id="categoriaPublico" name="categoriaPublico" required>
+            <option value="0">Seleccionar</option>
+            <option value="general">General</option>
+            <option value="estudiante">Estudiante</option>
+            <option value="adulto mayor">Adulto mayor</option>
+        </select><br><br>
+
+        <label for="Descuento">Descuento:</label><br>
+        <input type="number" id="Descuento" name="Descuento"><br><br>
+
+        <label for="rutCliente">RUT del cliente:</label><br>
+        <input type="number" id="rutCliente" name="rutCliente"><br><br>
+
+        <label for="idEventoVirtual">ID del evento virtual (*):</label><br>
+        <input type="number" id="idEventoVirtual" name="idEventoVirtual" required><br><br>
+
+        <input type="button" value="Pagina anterior" onClick="history.go(-1);">
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>

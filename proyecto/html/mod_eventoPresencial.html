@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar evento presencial - Sistema de Eventos y Entradas</title>
+</head>
+
+<body>
+    <hr>
+    <b>
+        <h2>Sistema de Eventos y Entradas</h2>
+    </b>
+
+    <h3>Ingrese el ID del evento presencial y escriba en el atributo a modificar: </h3>
+
+    <form id="mod_eventoPresencial" action="..\php\mod_eventoPresencial.php" method="post">
+
+        <label for="idEvento">ID del evento:</label><br>
+        <input type="number" id="idEvento" name="idEvento" required><br><br>
+
+        <label for="nombreEvento">Nombre del evento:</label><br>
+        <input type="text" id="nombreEvento" name="nombreEvento"><br><br>
+
+        <label for="descripcionEvento">Descripcion del evento:</label><br>
+        <input type="text" id="DescripcionEvento" name="descripcionEvento"><br><br>
+
+        <label for="fechaIniEvento">Fecha de inicio del evento:</label><br>
+        <input type="date" id="fechaIniEvento" name="fechaIniEvento"></br><br>
+
+        <label for="fechaTerEvento">Fecha de termino del evento:</label><br>
+        <input type="date" id="fechaTerEvento" name="fechaTerEvento"></br><br>
+
+        <label for="horaIniEvento">Hora de inicio del evento:</label><br>
+        <input type="time" id="horaIniEvento" name="horaIniEvento" min="00:00" max="23:59"><br><br>
+
+        <label for="horaTerEvento">Hora de termino del evento:</label><br>
+        <input type="time" id="horaTerEvento" name="horaTerEvento" min="00:00" max="23:59"><br><br>
+
+        <label for="duracionEvento">Duracion del evento:</label><br>
+        <input type="number" id="duracionEvento" name="duracionEvento"><br><br>
+
+        <label for="categoriaEvento">Seleccione la categoria del evento:</label>
+        <select id="categoriaEvento" name="categoriaEvento">
+            <option value="0">Seleccionar</option>
+            <option value="música">Musica</option>
+            <option value="deporte">Deporte</option>
+            <option value="teatro">Teatro</option>
+            <option value="especial">Especial</option>
+        </select><br><br>
+
+        <label for="restriccion">Seleccione si el evento posee restriccion de edad:</label>
+        <select id="restriccion" name="restriccion">
+            <option value="0">Seleccionar</option>
+            <option value="sí">Si</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="codLugarEvento">Codigo del lugar donde se realizara:</label><br>
+        <input type="number" id="codLugarEvento" name="codLugarEvento"><br><br>
+
+        <input type="button" value="Pagina anterior" onClick="history.go(-1);">
+        <input type="submit" value="Modificar">
+
+</body>
+
+</html>
